@@ -52,7 +52,7 @@ app.post('/quotes', function(req,res){
 app.get('/results', function(req,res){
     Quote.find({}, function(err, quotes){
     res.render('results', {collections:quotes});
-      console.log(quotes[1].createdAt.toDateString())
+    
   })
 
 })
