@@ -1,2 +1,0 @@
-# MEANMay17QDR
-
