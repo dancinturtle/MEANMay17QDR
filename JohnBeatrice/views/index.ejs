@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit Quote</title>
+  </head>
+  <h1>Welcome to QuotingDojo</h1>
+  <body>
+    <% if(typeof(errors) != 'undefined' ) { %>
+      <h4>Errors</h4>
+        <% for (var i = 0; i<errors.length; i++) { %>
+         <p><%= errors[i] %></p>
+        <% } %>
+    <% } %>
+    <form action='/quotes' method='post' style="width:90%; margin: 0 auto;">
+      <label for='name'>Your Name:</label>
+      <input type = 'text' class="form-control" name = 'name'>
+      <label for='quote'>Your quote:</label>
+      <textarea type = 'number' class="form-control" name = 'quote'></textarea>
+      <input type='submit' value='Add my Quote'>
+    </form>
+    <a href='/quotes'>Skip to quotes</a>
+  </body>
+</html>
